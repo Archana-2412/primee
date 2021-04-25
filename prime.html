@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>prime</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>    
+    body{
+      background-image: url("ky.jpg");    
+      background-repeat: no-repeat;
+      background-size: cover;  
+    }
+    .pal{
+     background-color:rgb(208, 219, 218);   
+    width: 500px;
+    height: 350px;
+    
+    position:absolute;
+    margin-left: 400px;
+    margin-top: 100px;
+    }    
+    </style>    
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron pal">
+        <h3 style="text-align: center;">Prime or Not</h3><br>
+          <form action="javascript:cal()" style="text-align: center">
+            <div class="form-group">
+              <input type="text" class="form-control " placeholder="Enter a number" id="prime">
+          </div>
+          <div class="form-group "> 
+            <button onclick="return primeNumber()" class="btn btn-danger">Check</button>
+          </div>
+          
+          <div class="form-group">
+             <input type="text" class="form-control" id="result">
+          </div>
+
+        </form>
+      </div>
+    </div>
+    <script src="./prime.js"></script>
+  </body>
+</html>
